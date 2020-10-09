@@ -164,6 +164,7 @@ h6 {
   align-items: center;
   justify-content: center;
 }
+/* .roomsHero default replaced by below  */
 .roomsHero {
   background-image: url("./images/room-2.jpeg");
   min-height: 60vh;
@@ -173,6 +174,7 @@ h6 {
 .banner {
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
+  height:45vh;
   color: var(--mainWhite);
   padding: 2rem 1rem;
   text-align: center;
