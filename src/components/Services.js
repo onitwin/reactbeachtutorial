@@ -8,30 +8,41 @@ export default class ClassName extends Component{
       {
         icon:<FaCocktail/>,
         title:'free cocktails',
-        info:"Lorem ipsum etc etc"
+        info:"Lorem ipsum etc etc Lorem ipsum etc etc Lorem ipsum etc etc"
       },
       {
         icon:<FaHiking/>,
-        title:'endless hiking',
-        info:"Lorem ipsum etc etc"
+        title:'Endless hiking',
+        info:"Lorem ipsum etc etc Lorem ipsum etc etc Lorem ipsum etc etc"
       },
       {
         icon:<FaShuttleVan/>,
-        title:'free shuttle',
-        info:"Lorem ipsum etc etc"
+        title:'Free shuttle',
+        info:"Lorem ipsum etc etc Lorem ipsum etc etc Lorem ipsum etc etc"
       },
       {
         icon:<FaBeer/>,
-        title:'strongest beer',
-        info:"Lorem ipsum etc etc"
+        title:'Strongest beer',
+        info:"Lorem ipsum etc etc Lorem ipsum etc etc Lorem ipsum etc etc"
       }
     ]
   }
   render() {
     return(
-      <div>
+      <section className="services">
       <Title title="services"/>
+      <div className="services-center">
+      {this.state.services.map((item,index)=>{
+        return(
+          <article key={index} className="service">
+          <span>{item.icon}</span>
+          <h6>{item.title}</h6>
+          <p>{item.info}</p>
+          </article>
+        )
+      })}
       </div>
+      </section>
     )
 
   }
